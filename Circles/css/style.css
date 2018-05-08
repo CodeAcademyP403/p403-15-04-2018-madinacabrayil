@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+body{
+    margin-top: 100px;
+}
+.right{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: solid 1px black;
+    
+}
+@keyframes move{
+    0% {top: 25%;}
+    25% {top: 40%;}
+    50% {top: 60%;}
+    75% {top: 40%;}
+    100% {top: 25%;}
+}
+.circle{
+    height: 100px;
+    width:100px;
+    background-color: black;
+    position: absolute;
+    border-radius: 100%;
+    animation: move 4s infinite linear;
+}
+
+label{
+    margin-left: 25px;
+  
+}
+
+input{
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
